@@ -1,0 +1,284 @@
+    body {
+      font-family: Arial;
+      margin: 20px;
+      text-align: center;
+      background-image: linear-gradient(#000, #0C0C0C);
+    }
+
+    h1, h2 {
+      color: #E1E1E1;
+      font-family: Arial;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="number"], input[type="date"], select {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 90%;
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+    }
+
+    button {
+      background-image: linear-gradient(#0E0E0E, #000);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: width;
+      border-radius: 4px;
+      transition-duration: 2s;
+    }
+
+    button:hover {
+      background-image: linear-gradient(#B4B4B4, #fff);
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      background-color: #232323;
+      padding: 10px;
+      color: white;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    li.completed {
+      background-color: #white;
+      text-decoration: line-through;
+      color: black;
+    }
+
+    li.grayed-out {
+      background-color: #444;
+      color: #888;
+    }
+
+    li.hidden {
+      display: none;
+    }
+
+    label {
+      color: white;
+    }
+
+    .habit-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+      padding: 8px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .habit-item .habit-name {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .habit-item .habit-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0;
+      align-items: center;
+    }
+
+    .habit-item .habit-buttons button {
+      margin: 0;
+      height: 40px;
+    }
+
+    .habit-item .habit-buttons button:first-child {
+      width: 150px;
+    }
+
+    .habit-item .habit-buttons button:last-child {
+      width: 40px;
+    }
+
+    .frequency-text {
+      font-size: 9px;
+      color: gray;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .habit-container {
+      margin-bottom: 15px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .frequency-option {
+      margin-top: 10px;
+    }
+
+    .frequency-option input[type="date"] {
+      margin-top: 10px;
+    }
+
+    .delete-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-section {
+      margin-top: 20px;
+    }
+
+    .progress-section label {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .progress-section select {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .timer-section {
+      margin-top: 20px;
+    }
+
+    .timer-section label {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .timer-section select {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .graph-section {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .graph-section label {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .graph-section select {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .graph-section canvas {
+      width: 100%;
+      background-color: black;
+      border: 1px solid white;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .menu ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      margin: 0 15px;
+      background-color: #000;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial;
+      background-color: #000
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    
+    .small-gray-text {
+      font-size: 9px;
+      color: gray;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .graph-section {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .graph-section label {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 10px;
+    }
+    
+    .graph-section select {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .graph-section canvas {
+      width: 100%;
+      background-color: black;
+      border: 1px solid white;
+    }
+    
+    .coming_soon {
+      width: 100%;
+      color: gray;
+      text-align: center;
+    }
+    
+    .coming_soon p {
+      margin-top; 140px;
+      margin-bottom; 140px;
+    }
+    
+    footer {
+      color: lightgray;
+      font-size: 8px;
+      background-color: black;
+      width: 100%;
+    }
+    
+    footer a {
+      text-decoration: none;
+      color: gray;
+    }
