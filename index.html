@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/int/styles.css">
+  <title>Habit Tracker</title>
+  <body>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html"><b>Habits</b></a></li>
+      <li><a href="timers.html">Timers</a></li>
+      <li><a href="graph.html">Graph</a></li>
+      <li><a href="history.html">History</a></li>
+    </ul>
+  </div>
+<br><br>
+  <h1>Habit Tracker</h1>
+  <h2>Your Habits</h2>
+    <label for="sortHabits">Sort Habits By:</label>
+    <select id="sortHabits">
+      <option value="default">Default</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="odd">Odd Days</option>
+      <option value="even">Even Days</option>
+      <option value="everyXDays">Every X Days</option>
+      </select>
+      <br><br>
+      <label for="filterTypeHabits">Filter Type:</label>
+      <select id="filterTypeHabits">
+        <option value="show">Show All</option>
+        <option value="gray">Gray Out</option>
+        <option value="hide">Hide</option>
+      </select>
+
+  <ul id="habitList"></ul>
+  <div id="timeInputFormContainer" style="display: none;">
+  <form id="timeInputForm">
+    <label for="timeInput">Enter time spent (in minutes):</label>
+    <input type="number" id="timeInput" name="timeInput" min="1" required>
+    <button type="submit">Submit</button>
+    <button type="button" id="cancelTimeInput">Cancel</button>
+    </form>
+  </div>
+  <br><br>
+      <form id="habitForm">
+    <label for="habit">Enter a new habit:</label>
+    <br>
+    <input type="text" id="habit" name="habit" placeholder="e.g. Work-out" required>
+    <br><br>
+
+    <label for="frequencyType">Choose Frequency Type:</label>
+    <select style="text-align:center; background-color: black; color: white;" id="frequencyType" name="frequencyType" required>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="everyXDays">Every X Days</option>
+    </select>
+
+    <div style="background-color:#232323; border-radius:8px; text-align:left; color: #E1E1E1; font-family: Arial; margin: 20px;">
+      <p style="margin:15px;" id="frequencyInputs">
+
+      </p>
+    </div>
+    <button type="submit">Add Habit</button>
+  </form>
+  <br><br>
+  <div>
+    <button id="clearAllButton">Delete All Habits</button>
+  </div>
+
+  <script src="/int/script.js"  ></script>
+  
+  <br>
+  <footer><br><a href="/extra/credits.html">Credits</a> page and <a href="/extra/function.html">how it works</a>. Issues? Check out the <a href="github.html">Github page.</a></footer>
+</body>
+</html>

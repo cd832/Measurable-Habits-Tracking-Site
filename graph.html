@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/int/styles.css">
+  <title>Habit Tracker</title>
+  <body>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Habits</a></li>
+      <li><a href="timers.html">Timers</a></li>
+      <li><a href="graph.html"><b>Graph</b></a></li>
+      <li><a href="history.html">History</a></li>
+    </ul>
+  </div>
+<br><br>
+  <h1>Habit Tracker</h1>
+    <div class="graph-section">
+    <h2>Graph</h2>
+    <label for="graphType">Graph Type:</label>
+    <select id="graphType">
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+    <canvas id="habitGraph" width="400" height="200"></canvas>
+  </div>
+
+<div class="graph-section">
+  <label for="habitSelectLineGraph">Select Habit:</label>
+  <select id="habitSelectLineGraph"></select>
+  <label for="lineGraphType">Progress Over Time:</label>
+  <select id="lineGraphType">
+    <option value="daily">Daily</option>
+    <option value="weekly">Weekly</option>
+    <option value="monthly">Monthly</option>
+  </select>
+  <canvas id="lineGraph" width="400" height="200"></canvas>
+</div>
+
+
+  <script src="/int/script.js"  ></script>
+  
+  <br>
+  <footer><br><a href="/extra/credits.html">Credits</a> page and <a href="/extra/function.html">how it works</a>. Issues? Check out the <a href="github.html">Github page.</a></footer>
+</body>
+</html>

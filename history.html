@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/int/styles.css">
+  <title>Habit Tracker</title>
+  <body>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Habits</a></li>
+      <li><a href="timers.html">Timers</a></li>
+      <li><a href="graph.html">Graph</a></li>
+      <li><a href="history.html"><b>History</b></a></li>
+    </ul>
+  </div>
+<br><br>
+  <h1>Habit Tracker</h1>
+  <h2>Track Your Progress</h2>
+  <div class="progress-section">
+    <label for="sortProgress">Sort Progress By:</label>
+    <select id="sortProgress">
+      <option value="default">Default</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+      <option value="odd">Odd Days</option>
+      <option value="even">Even Days</option>
+      <option value="everyXDays">Every X Days</option>
+    </select>
+    <br><br>
+    <label for="filterType">Filter Type:</label>
+    <select id="filterType">
+      <option value="show">Show All</option>
+      <option value="gray">Gray Out</option>
+      <option value="hide">Hide</option>
+    </select>
+  </div>
+  <ul id="progressList"></ul>
+    <script src="/int/script.js"  ></script>
+    
+  <br>
+  <footer><br><a href="/extra/credits.html">Credits</a> page and <a href="/extra/function.html">how it works</a>. Issues? Check out the <a href="github.html">Github page.</a></footer>
+</body>
+</html>
